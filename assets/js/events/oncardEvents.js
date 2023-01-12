@@ -6,9 +6,9 @@ function renderCards(numberOfPlays) {
     cardsList = generateCards(numberOfPlays)
 }
 function generateCards(numberOfPlays){
-    return Array(numberOfPlays/2).fill().map((_, indice) => `<li class="cards card-${indice+1}">
-    <img src="assets/img/back.png" alt="" width="117px" >
-    <img src="assets/img/parrot${indice+1}.gif" alt="" width="117px">
+    return Array(numberOfPlays/2).fill().map((_, indice) => `<li class="cards card-${indice+1}" data-test="card">
+    <img src="assets/img/back.png" alt="" width="117px" data-test="face-down-image">
+    <img src="assets/img/parrot${indice+1}.gif" alt="" width="117px" data-test="face-up-image">
 </li>`)
 }
 

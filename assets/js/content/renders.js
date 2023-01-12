@@ -1,4 +1,4 @@
-import { shuffleArray } from "../utils/utils.js"
+import { comparador } from "../utils/utils.js"
 import { insertEventOnClick, renderCards, cardsList } from "../events/oncardEvents.js";
 let numberOfPlays = 0;
 
@@ -15,7 +15,7 @@ function start(){
 function shuffleCardsAndInsertIntoHtml(){
     const lista = document.getElementById("cardsList")
     cardsList.push(...cardsList)
-    const cardsListShufled = shuffleArray(cardsList)
+    const cardsListShufled = cardsList.sort(comparador)
 
     cardsListShufled.forEach(card =>{
         lista.innerHTML += card
