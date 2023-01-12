@@ -23,12 +23,20 @@ function verifyFlipCard(cardsFlip, firstCard, secondCard, contador){
         }else{
             cardsFlip[0].classList.remove("verifyFlip")
             cardsFlip[1].classList.remove("verifyFlip")
-            
+            gameOver(contador)
         }
     }
 }
 
-
+function gameOver(countOfClick){
+    let flipperCards = document.querySelectorAll(".flipper")
+    
+    if(flipperCards.length === Number(numberOfPlays)){
+        alert(`"Você ganhou em ${countOfClick} jogadas! A duração do jogo foi de ${segundos} segundos!"`)
+        const ask = prompt("Gostaria de reinicar o jogo?")
+        doRestart(ask);
+    }
+}
 
 function doRestart(resposta){
     if(resposta === "sim"){
