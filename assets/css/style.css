@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#EEF9BF;
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    width:150px;
+    height:200px;
+}
+
+img{
+    display:block;
+    position:absolute;
+    backface-visibility: hidden;
+}
+
+li{
+    background-color: #A7E9AF;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+    transform-style: preserve-3d;
+}
+
+li img:last-child{
+    transform: rotateY(180deg);
+}
+
+.flipper{
+    transform:rotateY(180deg)
+}
+
+/* li:hover img:last-child{
+    transform:rotateY(0);
+} */
+
+#cardsList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+    max-width:90vw;
+    margin:auto;
+    gap:20px;
+}
+
+#titlePage{
+    font-size:56px;
+    color:#75b79e;
+    font-family: 'Roboto', sans-serif;
+    text-align:center;
+    margin-bottom:47px;
+    margin-top:40px;
+}
+
+#timer{
+    position:absolute;
+    right:0;
+    top:0;
+    margin:25px 90px 0 0;
+    color:#75b79e;
+    font-weight: 700;
+    text-transform:uppercase;
+    font-family:"Roboto", sans-serif;
+    font-size:22px;
+}
+
+@media screen and (max-width:614px){
+    #cardsList{
+        justify-content: center;
+    }
+}
