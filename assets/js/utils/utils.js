@@ -5,7 +5,7 @@ const cronometro = setInterval(() =>{
 }, 1000);
 
 function timer(sec){
-    document.getElementById("timer").innerHTML = `Timer: <span data-test="timer">${sec}</span>`
+    document.getElementById("timer").innerHTML = `<span data-test="timer">${sec}</span>`
 };
 
 function comparador() { 

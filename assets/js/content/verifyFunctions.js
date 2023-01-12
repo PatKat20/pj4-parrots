@@ -32,7 +32,7 @@ function gameOver(countOfClick){
     let flipperCards = document.querySelectorAll(".flipper");
     
     if(flipperCards.length === Number(numberOfPlays)){
-        alert(`"Você ganhou em ${countOfClick} jogadas! A duração do jogo foi de ${segundos} segundos!"`);
+        alert(`Você ganhou em ${countOfClick} jogadas! A duração do jogo foi de ${segundos} segundos!`);
         const ask = prompt("Gostaria de reinicar o jogo?");
         doRestart(ask);
     };

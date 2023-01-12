@@ -16,7 +16,7 @@ function onClickCard(event) {
     let target = event.currentTarget;
     let flipperCards = target.parentElement.querySelectorAll(".verifyFlip");
 
-    if (flipperCards.length <= 1 && target.classList.contains("flipper") == false) {
+    if (flipperCards.length <=1 && target.classList.contains("flipper") == false) {
         target.classList.add("flipper");
         target.classList.add("verifyFlip");
         contador++;
