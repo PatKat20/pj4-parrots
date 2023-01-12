@@ -1,4 +1,4 @@
-import {start} from "./content/renders.js"
+import {start} from "./content/renders.js";
 
-start()
+start();
 

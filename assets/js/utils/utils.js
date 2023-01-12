@@ -1,16 +1,16 @@
-let segundos = 0
+let segundos = 0;
 const cronometro = setInterval(() =>{
-    segundos++
-    timer(segundos)
-}, 1000)
+    segundos++;
+    timer(segundos);
+}, 1000);
 
 function timer(sec){
     document.getElementById("timer").innerHTML = `Timer: <span data-test="timer">${sec}</span>`
-}
+};
 
 function comparador() { 
 	return Math.random() - 0.5; 
-}
+};
 
 // function shuffleArray(arr) {
 //     for (let i = arr.length - 1; i > 0; i--) {
@@ -21,4 +21,4 @@ function comparador() {
 //     return arr;
 // }
 
-export { comparador , cronometro, segundos }
+export { comparador , cronometro, segundos };
