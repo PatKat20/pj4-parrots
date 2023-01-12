@@ -15,7 +15,7 @@ function start(){
 function shuffleCardsAndInsertIntoHtml(){
     const lista = document.getElementById("cardsList");
     cardsList.push(...cardsList);
-    const cardsListShufled = cardsList.sort(comparador);
+    const cardsListShufled = shuffleArray(cardsList);
 
     cardsListShufled.forEach(card =>{
         lista.innerHTML += card;
