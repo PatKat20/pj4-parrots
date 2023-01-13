@@ -1,3 +1,4 @@
+import { shuffleArray } from "../utils/utils.js";
 import { insertEventOnClick, renderCards, cardsList } from "../events/oncardEvents.js";
 let numberOfPlays = 0;
 
